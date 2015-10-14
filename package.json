@@ -1,0 +1,33 @@
+{
+  "name": "ntrack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radioactivePanda/nTrack.git"
+  },
+  "authors": [
+    {
+      "name": "Andrés Viesca",
+      "email": "andres.viescar@gmail.com"
+    },
+    {
+      "name": "Santiago Suárez",
+      "email": "santiago.su.mo@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radioactivePanda/nTrack/issues"
+  },
+  "homepage": "https://github.com/radioactivePanda/nTrack",
+  "dependencies": {
+    "express": "^4.13.3",
+    "grunt": "^0.4.5",
+    "mongodb": "^2.0.45"
+  }
+}
