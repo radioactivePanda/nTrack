@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<htmlng ng-app="app">
+<head>
+  <title>nTrack</title>
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/jquery/dist/jquery.js"></script>
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <h1>HOLA MUNDO!</h1>
+  <div ng-controller="MainController">
+    <h1>{{value}}</h1>
+    <table>
+      <tr><th>row number</th></tr>
+      <tr ng-repeat="i in arr"><td>{{i+1}}</td></tr>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="./main/main.js"></script>
+</body>
+</html>
