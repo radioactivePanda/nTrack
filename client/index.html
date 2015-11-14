@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <htmlng ng-app="app">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>nTrack</title>
   <script src="./bower_components/angular/angular.js"></script>
   <script src="./bower_components/jquery/dist/jquery.js"></script>
   <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/stylesheets/css/application.css">
 </head>
 <body>
-  <h1>HOLA MUNDO!</h1>
-  <div ng-controller="MainController">
-    <h1>{{value}}</h1>
-    <table>
-      <tr><th>row number</th></tr>
-      <tr ng-repeat="i in arr"><td>{{i+1}}</td></tr>
-    </table>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <a class="navbar-brand" href="/">
+      <img alt="Notaría 666" src="#">
+    </a>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Login <span class="sr-only">(current)</span></a></li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <h1>HOLA MUNDO!</h1>
+    <div ng-controller="MainController">
+      <h1>{{value}}</h1>
+      <table>
+        <tr><th>row number</th></tr>
+        <tr ng-repeat="i in arr"><td>{{i+1}}</td></tr>
+      </table>
+    </div>
   </div>
 
   <script src="app.js"></script>
