@@ -3,7 +3,6 @@ var assert = chai.assert;
 var expect = chai.expect;
 var should = chai.should;
 var supertest = require('supertest');
-var app = require('../server/server.js');
 var api = supertest('http://localhost:3000');
 
 
