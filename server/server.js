@@ -22,7 +22,21 @@ var User = mongoose.model('User', user);
 
 app.get('/', function (req, res) {
   res.sendFile('./client/index.html');
+  res.sendStatus(200);
 });
+
+app.post('/login', function (req, res) {
+  res.status(401).end();
+});
+
+app.post('/signup', function (req, res) {
+  res.status(401).end();
+});
+
+app.get('/logout', function (req, res) {
+  res.sendStatus(200);
+});
+
 
 var server = app.listen(3000, function () {
   var port = server.address().port;
