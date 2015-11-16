@@ -1,45 +1,20 @@
 var express = require('../node_modules/express');
 var app = express();
+var handler = require('./config/request-handler.js');
 
 app.use(express.static('./client'));
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/nTrack');
 
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function (callback) {
-  console.log("db connection");
-});
+app.get('/', handler.home);
 
-var user = mongoose.Schema({
-    name: String,
-    email: String,
-    password: String,
-    personalData: { type: mongoose.Schema.Types.Mixed, default: {} },
-    applications: { type: mongoose.Schema.Types.Mixed, default: {} }
-});
-var User = mongoose.model('User', user);
+app.post('/login', handler.login);
 
-app.get('/', function (req, res) {
-  res.sendFile('./client/index.html');
-  res.sendStatus(200);
-});
+app.post('/signup', handler.signup);
 
-app.post('/login', function (req, res) {
-  res.status(401).end();
-});
-
-app.post('/signup', function (req, res) {
-  res.status(401).end();
-});
-
-app.get('/logout', function (req, res) {
-  res.sendStatus(200);
-});
+app.get('/logout', handler.logout);
 
 
-var server = app.listen(3000, function () {
-  var port = server.address().port;
+var port = process.env.PORT || 3000;
 
-  console.log('Listening on port ', port);
-});
+app.listen(port)
+
+console.log('Listening on port ', port);
