@@ -11,23 +11,58 @@
   <link rel="stylesheet" href="./assets/stylesheets/css/application.css">
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-static-top">
+  <nav class="navbar navbar-default">
     <a class="navbar-brand" href="/">
-      <img alt="Notaría 666" src="#">
+      <img alt="Notaría 160" src="./assets/images/notaria_160.png">
     </a>
-    <ul class="nav navbar-nav">
-      <li><a href="#">Login <span class="sr-only">(current)</span></a></li>
+    <ul class="nav navbar-nav" id="login">
+      <li><a href="#">Login</a></li>
     </ul>
   </nav>
-  <div class="container-fluid">
-    <h1>HOLA MUNDO!</h1>
-    <div ng-controller="MainController">
-      <h1>{{value}}</h1>
-      <table>
-        <tr><th>row number</th></tr>
-        <tr ng-repeat="i in arr"><td>{{i+1}}</td></tr>
-      </table>
+  <div class="container-fluid" id="site-layout">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="news">
+          <img alt="news" src="http://blog.rentals.com/wp-content/uploads/2013/10/Law_Image.jpg" height="300px">
+          <h2>Bienvenido Notaría 160!</h2>
+        </div>
+      </div>
     </div>
+    <div class="container">
+      <div class="row products">
+        <div class="top-product col-md-5 col-md-offset-1">
+          <div class="product-description">Testamento
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum vitae nibh ac tincidunt. Maecenas at quam sit amet purus cursus feugiat a eu sapien. 
+            </p>
+          </div>
+        </div>
+        <div class="top-product col-md-5">
+          <div class="product-description">Escritura
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum vitae nibh ac tincidunt. Maecenas at quam sit amet purus cursus feugiat a eu sapien. 
+            </p>
+          </div>
+        </div>
+        <div class="top-product col-md-5 col-md-offset-1">
+          <div class="product-description">Poderes
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum vitae nibh ac tincidunt. Maecenas at quam sit amet purus cursus feugiat a eu sapien. 
+            </p>
+          </div>
+        </div>
+        <div class="top-product col-md-5">
+          <div class="product-description">Notificaciones
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum vitae nibh ac tincidunt. Maecenas at quam sit amet purus cursus feugiat a eu sapien. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer col-md-12">
+    FOOTER
   </div>
 
   <script src="app.js"></script>
