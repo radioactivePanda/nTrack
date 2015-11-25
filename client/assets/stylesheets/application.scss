@@ -1,3 +1,95 @@
+html {
+  font-size: 62.5%;
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  background-color: #fffff
+  background-color: #e1e3e4;
+  margin-bottom: 15rem;
+}
+
+.navbar {
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 7rem;
+  position: absolute;
+}
+
+#login {
+  float: right;
+  li a {
+    line-height: 4rem;
+  }
+}
+
+#site-layout {
+  background: url("http://www.familylawyerusa.com/wp-content/uploads/2015/08/dfgfsdadfdsdfs.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px;
+}
+
+.news {
+  margin-top: 15rem;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+  position: relative;
+
+  img {
+    padding: 2rem;
+  }
+
+  h2 {
+    color: #ffffff;
+    position: absolute;
+    top: 8rem;
+    right: 6rem;
+  }
+}
+
+.footer {
+  padding: 6rem 0 2rem 0;
+  margin: 6rem auto 0 auto;
+  background: #222;
+  height: 15rem;
+  bottom: 0;
+}
+
+.products {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.top-product {
+  background: url("http://info.legalzoom.com/DM-Resize/photos.demandstudios.com/getty/article/103/193/77006480.jpg?w=600&h=600&keep_ratio=1") no-repeat;
+  height: 280px;
+  border: solid 0.1rem;
+}
+
+.product-description {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.product-description-active {
+  font-size: 3rem;
+  background: rgba(0,0,0,0.5);
+  background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
 }
