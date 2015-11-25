@@ -27,6 +27,7 @@
   "homepage": "https://github.com/radioactivePanda/nTrack",
   "dependencies": {
     "chai": "^3.4.0",
+    "chai-as-promised": "^5.1.0",
     "express": "^4.13.3",
     "grunt": "^0.4.5",
     "mocha": "^2.3.3",
