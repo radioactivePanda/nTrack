@@ -15,7 +15,7 @@ var user = mongoose.Schema({
     personalData: { type: mongoose.Schema.Types.Mixed, default: {} },
     applications: { type: mongoose.Schema.Types.Mixed, default: {} }
 });
-var Users = mongoose.model('User', user);
+var User = mongoose.model('User', user);
 
 module.exports.user = user;
-module.exports.Users = Users;
+module.exports.User = User;
