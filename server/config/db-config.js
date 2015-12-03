@@ -16,3 +16,6 @@ var user = mongoose.Schema({
     applications: { type: mongoose.Schema.Types.Mixed, default: {} }
 });
 var User = mongoose.model('User', user);
+
+module.exports.user = user;
+module.exports.User = User;
